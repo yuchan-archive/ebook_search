@@ -3,6 +3,10 @@ rvm:
 - 2.1.2
 - 2.0.0
 - 1.9.3
+
+env:
+  - RAKUTEN_API_KEY=notnil
+
 deploy:
   provider: heroku
   api_key:
