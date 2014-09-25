@@ -21,5 +21,4 @@ test:
   database: db/rakuten_kobo_test.db
 
 production:
-  <<: *default
-  database: db/rakuten_kobo_production.db
+  adapter: postgresql
