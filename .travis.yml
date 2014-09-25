@@ -1,0 +1,13 @@
+language: ruby
+rvm:
+- 2.0.0
+- 1.9.3
+- jruby-19mode
+- rbx-2
+deploy:
+  provider: heroku
+  api_key:
+    secure: W3xwog/uSeVzUriqZQkXdfIPeiNBcpVO55eBEaOm4RW8wHsjASaj+lX38Znb2sTSrkVBHDqa8L9b5RPI+x4L48fEFuNZ5ohNWAjs31Z9Vj/hQNK1ekh/Ln8x3p1dfa/lsKPGzM2PqC7Zzw8Zkufp0nvFXoQGskgH3Op/DC+rgGc=
+  app: aqueous-sea-6374
+  on:
+    repo: yuchan/ebook_search
