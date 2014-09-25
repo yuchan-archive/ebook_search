@@ -1,0 +1,9 @@
+<h1>(False)Kobo Home</h1>
+<ul>
+<% @result.each do |item| %>
+  <li>
+    <img src=<%= item["Item"]["mediumImageUrl"] %> alt=<%= item["Item"]["title"] %> />
+    <span><a href=<%= item["Item"]["affiliateUrl"] %>><%= item["Item"]["title"] %></a></span>
+  </li>
+<% end %>
+</ul>
