@@ -1,9 +1,10 @@
-<h1>(False)Kobo Home</h1>
-<ul>
+<div class="list-group">
+
 <% @result.each do |item| %>
-  <li>
-    <img src=<%= item["Item"]["mediumImageUrl"] %> alt=<%= item["Item"]["title"] %> />
-    <span><a href=<%= item["Item"]["affiliateUrl"] %>><%= item["Item"]["title"] %></a></span>
-  </li>
+<a href="<%= item["Item"]["affiliateUrl"] %>" class="list-group-item">
+  <img src=<%= item["Item"]["mediumImageUrl"] %> alt=<%= item["Item"]["title"] %> class="img-rounded" />
+  <span class="list-group-item-text"><%= item["Item"]["title"] %></span>
+</a>
 <% end %>
-</ul>
+
+</div>

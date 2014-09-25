@@ -5,8 +5,24 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
 <body>
+<div class="page-header">
+  <h1>Do you have Kobo?</h1>
+  <a href="https://play.google.com/store/apps/details?id=jp.co.rakuten.kobo">
+  <%= image_tag "en_generic_rgb_wo_60.png" %>
+  </a>
+  <p>Are you already a kobo user? OK, then buy books!</p>
+</div>
 
 <%= yield %>
 
