@@ -1,9 +1,8 @@
 language: ruby
 rvm:
+- 2.1.2
 - 2.0.0
 - 1.9.3
-- jruby-19mode
-- rbx-2
 deploy:
   provider: heroku
   api_key:
@@ -11,3 +10,5 @@ deploy:
   app: aqueous-sea-6374
   on:
     repo: yuchan/ebook_search
+  run:
+    - "rake db:migrate"
