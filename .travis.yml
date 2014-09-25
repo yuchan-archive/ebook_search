@@ -5,7 +5,7 @@ rvm:
 - 1.9.3
 
 env:
-  - RAKUTEN_API_KEY=notnil
+  - RAKUTEN_API_KEY=1055589361237552135
 
 deploy:
   provider: heroku
